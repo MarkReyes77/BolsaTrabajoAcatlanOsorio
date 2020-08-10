@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My from</title>
+
+	<script type="text/javascript" src = "Librerias/Files_js/jquery.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="nav_estilo.css?r=<?=mt_rand(1,1000);?>">
+</head>
+<body>
+	<nav id="menu">
+		<ul>
+			<li>enlace 1</li>
+			<li>enlace 2
+				<ul>
+					<li>2.1</li>
+					<li>2.2</li>
+				</ul>
+			</li>
+			<li>3</li>
+			<li>4</li>	
+		</ul>
+	</nav>
+
+<br><br>
+
+	<div class="container">
+		<form class="myForm">
+			<p>
+				user: <input type="text">
+			</p>
+			<p>
+				pass: <input type="password">
+			</p>
+		</form>
+		<button id="myButton" onclick="ShowHideElement()">Show form</button>
+	</div>
+	<div>
+		<!--Scripts-->
+		<script type="text/javascript">
+			$(".myForm").hide();//lo primero a suceder
+			function ShowHideElement(){
+				let text = "";
+				if ($("#myButton").text() === "Show form") {
+					$(".myForm").show();
+					text = "Hide Form";
+				}else{
+					$(".myForm").hide();
+					text = "Show form";
+				}
+				$("#myButton").html(text);
+			}
+		</script>
+	</div>
+</body>
+</html>

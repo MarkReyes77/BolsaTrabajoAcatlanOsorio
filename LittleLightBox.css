@@ -1,0 +1,29 @@
+            div.lightBox_Shadow{
+                position: fixed;
+                background-color: #000;
+                height: 100%;
+                width: 100%;
+                z-index: 50;    
+                opacity: 0.5;
+                display: none;
+                top: 0%;
+                                
+            }
+
+            div.lightBoxConten{
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                z-index: 51;
+                overflow: auto;
+                top: 10%;
+                display: none;
+            }
+
+            div.lightBox_Body{
+                width: 40%;
+                margin: 0px auto;
+                background-color: #FFF;
+                min-height: 300px;
+                border-radius: 10px;
+            }
