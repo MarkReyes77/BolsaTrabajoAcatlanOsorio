@@ -22,9 +22,9 @@
 			header("location: index.php");
 
 		}else{
-			echo "Error: Contraseña incorrecta";
+			header("location: frm_login.php");
 		}
 	}else{
-		echo "Error: No existe el usuario";
+		header("location: frm_login.php");
 	}
 

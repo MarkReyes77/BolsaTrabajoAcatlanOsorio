@@ -1,7 +1,7 @@
 
 <!--
 *
-* @Autor
+* @Autor Marcos Cruz Reyes
 *
 *
 *
@@ -30,7 +30,7 @@
 		<div class="lightBox_Body" id="LB_Body">
 			<div style="text-align: right;">
 				<button class="botonCerrar" onclick="accionLB(0);">
-					<em class="icon-cross"></em>
+					<em class=" icon-cancel-circle"></em>
 				</button>
 			</div>
 			<div id="LB_Body">
@@ -86,7 +86,7 @@
 					<input type="password" name="Pass" placeholder="Contraseña"><br><br>
 					<input class="boton" type="submit" name="conectar" value="Iniciar Sesion">
 				</div>
-			</form>
+			</form> 
 			<a class="vinculos" style="cursor: pointer;">¿Olvidaste tu contraseña?</a>
 			<br>
 			<p  class="vinculos" >¿Todavia no tienes una cuenta? <STRONG style="cursor: pointer; color: #E53935;" onclick="accionLB('abrir');">Registrate</STRONG></p>
