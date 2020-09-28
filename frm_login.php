@@ -89,7 +89,7 @@
 			</form> 
 			<a class="vinculos" style="cursor: pointer;">¿Olvidaste tu contraseña?</a>
 			<br>
-			<p  class="vinculos" >¿Todavia no tienes una cuenta? <STRONG style="cursor: pointer; color: #E53935;" onclick="accionLB('abrir');">Registrate</STRONG></p>
+			<p class="vinculos" >¿Todavia no tienes una cuenta? <STRONG style="cursor: pointer; color: #E53935;" onclick="accionLB('abrir');">Registrate</STRONG></p>
 			<br><br>
 		</div>
 	</div>

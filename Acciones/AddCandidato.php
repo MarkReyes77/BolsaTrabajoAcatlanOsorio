@@ -24,6 +24,19 @@
 	$userPass = NULL;
 	$userTipoUsuario = NULL;
 
+	
+	?>
+	<script type="text/javascript">
+		//Variables para generacion de la ruta para redireccionar si hubo un registro exitoso  
+		var protocolo = window.location.protocol;
+		var host = window.location.host;
+		var folder= "bolsa";
+		var extra = "frm_login.php";
+		var dir = protocolo.concat("//",host,"/",folder,"/",extra);
+	</script>
+	<?php 
+
+	//Validacion de contraseña
 	if ($p===$p1) {
 		// ingres_field_precision(result, index)
 
@@ -33,21 +46,15 @@
 				$r = mysqli_query($link,"SELECT * FROM usuario") or die(mysqli_error($link));
 				while ($d = mysqli_fetch_array($r)) {
 					$userID= $d['ID_Usuario'];
+
 				}
 			
 				mysqli_free_result($r);
-						$host  = $_SERVER['HTTP_HOST'];
-						$folder = "/bolsa";
-						$extra = "/frm_login.php";
+						
 				?>
 						<script type="text/javascript">
 							var respuesta = alert("Usted ha sido registrado exitosamente");
 							if (!respuesta) {
-								var protocolo = window.location.protocol;
-								var host = window.location.host;
-								var folder= "bolsa";
-								var extra = "frm_login.php";
-								var dir = protocolo.concat("//",host,"/",folder,"/",extra);
 								window.location.replace(dir);
 							}else{
 								alert("Inicie sesion");
@@ -75,7 +82,7 @@
 		}
 
 	}else{
-		echo "Contraseñas incorrectas";
+		 
 	}
 
 	?>

@@ -13,7 +13,7 @@
 <!-- Light Box--->
 	<div class="Conten">
 		<div class="Titulo">
-				<br>Introduce los siguientes datos para registrarte como Candidato.
+				Introduce los siguientes datos para registrarte como Candidato.
 		</div>
 		<br>
 		<div class="Body_register">
@@ -32,7 +32,7 @@
 					<input type="password" name="Pass1" placeholder="Confirmar Contraseña" required=""><br><br>
 					<input class="boton" type="submit" name="conectar" value="Registrate">
 				</form>
-				<br><br>
+				<br>
 			</div>
 		</div>
 		<br>
